@@ -1,7 +1,8 @@
+package hu.bme.mit.ase.shingler.gradle
+
 plugins {
     java
     jacoco
-    application
 }
 
 java.toolchain {
@@ -38,8 +39,4 @@ tasks {
     jacocoTestReport {
         inputs.files(test.get().outputs)
     }
-}
-
-application {
-    mainClass = "hu.bme.mit.ase.shingler.similarity.SimilarityApp"
 }
